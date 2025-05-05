@@ -81,9 +81,9 @@ It allows trusted traffic (like your web browser accessing a website).
 🔹 You can set rules to decide which types of data are safe or unsafe.
 
 ## GCP Storage options:
-
-| **Storage Type**   | **Description**                                                                                                             |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| **Object Storage** | Stores unstructured data as objects (files + metadata). Ideal for backups, images, and logs. Example: Google Cloud Storage. |
-| **Block Storage**  | Stores data in fixed-size blocks, like a virtual hard drive. Used for VM disks and databases. Example: Persistent Disk.     |
-| **File Storage**   | Provides a traditional folder/file system. Suitable for shared access and legacy applications. Example: Filestore.          |
+| **Storage Type**     | **Description**                                                                              | **Types of Files Stored**                                                                                                 |
+| -------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Object Storage**   | Stores unstructured data as objects (file + metadata). Ideal for backups, images, and media. | - **Images:** JPG, PNG, GIF <br> - **Videos:** MP4, AVI, MOV <br> - **Backups:** ZIP, TAR <br> - **Logs:** TXT, JSON, CSV |
+| **Block Storage**    | Stores data in fixed-size blocks like a hard drive. Used for VM disks and databases.         | - **VM Files:** VHD, VMDK <br> - **Database Files:** MySQL, PostgreSQL <br> - **Log Files:** TXT, LOG                     |
+| **File Storage**     | Provides a traditional file system with folders and directories. Best for shared access.     | - **Documents:** DOCX, PDF, TXT <br> - **Spreadsheets:** XLSX, CSV <br> - **Configuration Files:** JSON, YAML, INI        |
+| **Database Storage** | Stores data in structured tables for relational databases.                                   | - **SQL Files:** .sql, .db <br> - **BigQuery Export Files:** CSV, JSON, Avro, Parquet                                     |
