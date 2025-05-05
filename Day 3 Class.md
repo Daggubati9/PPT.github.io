@@ -27,21 +27,21 @@ Predefined Role: Service-specific roles like "Storage Admin" or "BigQuery Viewer
 
 Custom Role: User-defined roles with tailored permissions.
 
-🔑 Service Account
+🔹 Service Account
 Special Google account used by apps or VMs to access GCP services securely.
 
 ## 📊 3. API Services and Usage:-
 Billing Based on Usage: Charges apply per use (compute time, storage, queries).
-
 Billing Account: Needed to activate and pay for GCP services.
 
-API Name	Simple Explanation
-Dialogflow API	Create chatbots and voice assistants using natural language understanding.
-Cloud SQL API	Manage relational cloud databases like MySQL and PostgreSQL.
-BigQuery API	Run fast SQL-like queries on massive datasets.
-Vertex AI API	Train and deploy machine learning models on GCP.
-Cloud Run API	Run containerized apps that scale automatically with incoming traffic.
-Connectors API	Connect GCP with external services like Salesforce or MySQL.
+| **API Name**       | **Simple Explanation**                                                      |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Dialogflow API** | Used to build chatbots and voice assistants that understand human language. |
+| **Cloud SQL API**  | Lets you manage cloud databases like MySQL and PostgreSQL.                  |
+| **BigQuery API**   | Helps you run fast queries on huge amounts of data.                         |
+| **Vertex AI API**  | Used to build and run machine learning models easily.                       |
+| **Cloud Run API**  | Runs your container apps and handles scaling automatically.                 |
+| **Connectors API** | Connects GCP with other systems like Salesforce or databases.               |
 
 ## 🌐 4. Networking:-
 🔹 Virtual Networking
@@ -59,27 +59,30 @@ Filters traffic in and out of your GCP network.
 
 Protects resources by allowing or denying traffic based on rules.
 
-## 💾 5. GCP Storage Options:-
-Storage Type	Description	File Types
-Object Storage	Stores files as objects. Best for backups, images, videos.	Images, videos, backups, logs (JPG, MP4, ZIP, CSV)
-Block Storage	Disk-based storage for VMs and databases.	VM files, databases, logs (VHD, MySQL, LOG)
-File Storage	Traditional file system for shared access.	Documents, config files, spreadsheets (DOCX, JSON, XLSX)
-Database Storage	Structured table-based storage for SQL databases.	SQL exports, DB snapshots (SQL, CSV, Avro)
+## 5. GCP Storage options:
+| **Storage Type**     | **Description**                                                                              | **Types of Files Stored**                                                                                                 |
+| -------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Object Storage**   | Stores unstructured data as objects (file + metadata). Ideal for backups, images, and media. | - **Images:** JPG, PNG, GIF <br> - **Videos:** MP4, AVI, MOV <br> - **Backups:** ZIP, TAR <br> - **Logs:** TXT, JSON, CSV |
+| **Block Storage**    | Stores data in fixed-size blocks like a hard drive. Used for VM disks and databases.         | - **VM Files:** VHD, VMDK <br> - **Database Files:** MySQL, PostgreSQL <br> - **Log Files:** TXT, LOG                     |
+| **File Storage**     | Provides a traditional file system with folders and directories. Best for shared access.     | - **Documents:** DOCX, PDF, TXT <br> - **Spreadsheets:** XLSX, CSV <br> - **Configuration Files:** JSON, YAML, INI        |
+| **Database Storage** | Stores data in structured tables for relational databases.                                   | - **SQL Files:** .sql, .db <br> - **BigQuery Export Files:** CSV, JSON, Avro, Parquet                                     |
 
-## 🔗 6. Integration Storage Types:-
-Integration Type	Description	Example
-Inside Cloud (Internal)	Connects GCP services securely with low latency.	Cloud Storage → BigQuery, Pub/Sub → Cloud Functions
-Outside Cloud (External)	Integrates GCP with third-party or on-prem systems via APIs, VPNs, etc.	GCP → Salesforce, On-prem DBs via API or VPN
+## 6. Integration Storage types:
+| **Integration Type**         | **Description**                                                                       | **Example**                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Inside Cloud (Internal)**  | Integration **within GCP** services, offering secure and fast connections.            | Cloud Storage ↔ BigQuery <br> Cloud Pub/Sub ↔ Cloud Functions      |
+| **Outside Cloud (External)** | Integration with **external systems** like on-prem services or third-party platforms. | GCP ↔ Salesforce (via APIs) <br> GCP ↔ On-prem databases (via VPN) |
 
-## 📡 7. External Pipeline Mechanisms:-
-Mechanism	Description
-REST APIs	Allows app-to-app data transfer using HTTP requests.
-VPN / Interconnect	Secure, private network connection from on-premises to GCP.
-Pub/Sub	Enables real-time event publishing to GCP pipelines.
-SFTP/FTP	Transfers bulk data (files) from outside systems to Cloud Storage.
-Cloud Functions / Run	Triggers workflows from external HTTP events.
-Airflow / Talend	Automates multi-step workflows with orchestration tools.
-Kafka / Dataflow	Real-time stream processing and transformation of external data.
+## 7. When integrating pipelines from outside the cloud:
+| **Mechanism**                   | **Description**                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------ |
+| **REST APIs**                   | Used to send or retrieve data between external systems and GCP services.       |
+| **Cloud VPN / Interconnect**    | Provides secure, direct network connectivity from on-premises to GCP.          |
+| **Pub/Sub**                     | Enables real-time event/data streaming from external systems to GCP pipelines. |
+| **SFTP/FTP (Batch Transfer)**   | Transfers large files in batches from external environments to Cloud Storage.  |
+| **Cloud Functions / Cloud Run** | Offers HTTP endpoints to trigger serverless workflows from external systems.   |
+| **Apache Airflow / Talend**     | Orchestrates and automates multi-step data workflows across platforms.         |
+| **Kafka / Dataflow**            | Streams real-time data from external sources into GCP for processing.          |
 
  ## When to Use What:-
 Use REST APIs for communication between systems.
@@ -92,15 +95,16 @@ Use SFTP for batch uploads.
 
 Use Cloud Functions for event-driven tasks.
 
-## 🔁 8. Internal GCP Pipeline Mechanisms:-
-Mechanism	Description
-Cloud Composer	Orchestrates workflows using Apache Airflow.
-Dataflow	Processes real-time and batch data using Apache Beam.
-Cloud Functions	Event-driven, serverless functions triggered by events (e.g., file upload).
-Cloud Run	Runs containers that respond to HTTP triggers.
-Pub/Sub	Streams events and messages to services.
-Workflows	Automates service interactions with a defined flow.
-BigQuery Scheduled Jobs	Schedules SQL queries for analytics or reporting.
+## 8. ✅ Pipeline Mechanisms for Inside GCP:
+| **Mechanism**                  | **Description**                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| **Cloud Composer (Airflow)**   | Orchestrates complex data pipelines using a managed Apache Airflow service.         |
+| **Dataflow**                   | Used for real-time or batch data processing and transformation (Apache Beam).       |
+| **Cloud Functions**            | Event-driven, lightweight functions to trigger pipelines (e.g., after file upload). |
+| **Cloud Run**                  | Container-based execution of pipeline components triggered via HTTP.                |
+| **Pub/Sub**                    | Event/message streaming to trigger other GCP services or steps in a pipeline.       |
+| **Workflows**                  | Connects and automates GCP services into serverless workflows.                      |
+| **BigQuery Scheduled Queries** | Automates data transformation and reporting inside BigQuery.                        |
 
  ## 🔄Use Case Example
 Cloud Storage upload → triggers Cloud Function → publishes message to Pub/Sub → starts Dataflow → loads data into BigQuery.
