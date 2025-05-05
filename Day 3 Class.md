@@ -104,3 +104,30 @@ It allows trusted traffic (like your web browser accessing a website).
 | **Cloud Functions / Cloud Run** | Offers HTTP endpoints to trigger serverless workflows from external systems.   |
 | **Apache Airflow / Talend**     | Orchestrates and automates multi-step data workflows across platforms.         |
 | **Kafka / Dataflow**            | Streams real-time data from external sources into GCP for processing.          |
+
+## ✅ When to Use What:
+Use REST APIs for app-to-app communication.
+
+Use VPN/Interconnect when frequent, secure data movement is needed.
+
+Use Pub/Sub or Kafka for real-time integration.
+
+Use batch/SFTP for scheduled bulk transfers.
+
+Use Cloud Functions for event-driven triggers from external services.
+
+## ✅ Pipeline Mechanisms for Inside GCP:
+| **Mechanism**                  | **Description**                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| **Cloud Composer (Airflow)**   | Orchestrates complex data pipelines using a managed Apache Airflow service.         |
+| **Dataflow**                   | Used for real-time or batch data processing and transformation (Apache Beam).       |
+| **Cloud Functions**            | Event-driven, lightweight functions to trigger pipelines (e.g., after file upload). |
+| **Cloud Run**                  | Container-based execution of pipeline components triggered via HTTP.                |
+| **Pub/Sub**                    | Event/message streaming to trigger other GCP services or steps in a pipeline.       |
+| **Workflows**                  | Connects and automates GCP services into serverless workflows.                      |
+| **BigQuery Scheduled Queries** | Automates data transformation and reporting inside BigQuery.                        |
+
+## 🔄 Use Case Example:
+A file lands in Cloud Storage → triggers Cloud Function → publishes to Pub/Sub → triggers Dataflow job → loads into BigQuery.
+
+These tools help automate, scale, and simplify your pipelines without needing external infrastructure.
