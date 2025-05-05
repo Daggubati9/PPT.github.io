@@ -32,22 +32,14 @@ Roles created by Google with specific permissions for a particular service (e.g.
 User-created roles that allow you to define a set of permissions tailored to your specific needs. You define specific permissions for custom needs.
 
 
-Service Account:
+## 🔑 Service Account:
+A special Google account used by apps or virtual machines (VMs) to access GCP services.
 
-A special Google account used by apps or VMs to call GCP services.
+Helps run services like Cloud Run or authenticate with APIs like Dialogflow.
 
-Attach to APIs, run services like Cloud Run, or authenticate with Dialogflow.
-
-🔌 API Services and Usage
-
-🔹 Billing Based on Usage
-
-GCP APIs and services charge based on actual use:
-
-E.g., number of queries, storage used, compute time, etc.
-
-Each project must be linked to a Billing Account to use paid services.
-
+## 📊 API Services and Usage:
+    Billing Based on Usage:GCP charges based on actual usage (e.g., number of queries, storage used, compute time).       
+    Billing Account:Your project must be linked to a Billing Account to use paid GCP services.
 
 ## API / Service	Purpose:
 | **API Name**       | **Simple Explanation**                                                      |
