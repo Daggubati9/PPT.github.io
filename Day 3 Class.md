@@ -87,3 +87,20 @@ It allows trusted traffic (like your web browser accessing a website).
 | **Block Storage**    | Stores data in fixed-size blocks like a hard drive. Used for VM disks and databases.         | - **VM Files:** VHD, VMDK <br> - **Database Files:** MySQL, PostgreSQL <br> - **Log Files:** TXT, LOG                     |
 | **File Storage**     | Provides a traditional file system with folders and directories. Best for shared access.     | - **Documents:** DOCX, PDF, TXT <br> - **Spreadsheets:** XLSX, CSV <br> - **Configuration Files:** JSON, YAML, INI        |
 | **Database Storage** | Stores data in structured tables for relational databases.                                   | - **SQL Files:** .sql, .db <br> - **BigQuery Export Files:** CSV, JSON, Avro, Parquet                                     |
+
+## Integration Storage types:
+| **Integration Type**         | **Description**                                                                       | **Example**                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Inside Cloud (Internal)**  | Integration **within GCP** services, offering secure and fast connections.            | Cloud Storage ↔ BigQuery <br> Cloud Pub/Sub ↔ Cloud Functions      |
+| **Outside Cloud (External)** | Integration with **external systems** like on-prem services or third-party platforms. | GCP ↔ Salesforce (via APIs) <br> GCP ↔ On-prem databases (via VPN) |
+
+## When integrating pipelines from outside the cloud:
+| **Mechanism**                   | **Description**                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------ |
+| **REST APIs**                   | Used to send or retrieve data between external systems and GCP services.       |
+| **Cloud VPN / Interconnect**    | Provides secure, direct network connectivity from on-premises to GCP.          |
+| **Pub/Sub**                     | Enables real-time event/data streaming from external systems to GCP pipelines. |
+| **SFTP/FTP (Batch Transfer)**   | Transfers large files in batches from external environments to Cloud Storage.  |
+| **Cloud Functions / Cloud Run** | Offers HTTP endpoints to trigger serverless workflows from external systems.   |
+| **Apache Airflow / Talend**     | Orchestrates and automates multi-step data workflows across platforms.         |
+| **Kafka / Dataflow**            | Streams real-time data from external sources into GCP for processing.          |
