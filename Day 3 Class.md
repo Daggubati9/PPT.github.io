@@ -1,4 +1,4 @@
-☁️ 1. Google Cloud Platform (GCP) Overview
+## ☁️ 1. Google Cloud Platform (GCP) Overview:-
 🔹 GCP (Google Cloud Platform)
 A cloud service by Google to run apps, store data, and use computing power online.
 
@@ -14,7 +14,7 @@ Open-source tool for automating cloud infrastructure.
 
 Manages GCP resources using code (Infrastructure as Code).
 
-🔐 2. Access Control in GCP
+## 🔐 2. Access Control in GCP:-
 🔹 IAM (Identity and Access Management)
 Manages who can access what in GCP.
 
@@ -30,7 +30,7 @@ Custom Role: User-defined roles with tailored permissions.
 🔑 Service Account
 Special Google account used by apps or VMs to access GCP services securely.
 
-📊 3. API Services and Usage
+## 📊 3. API Services and Usage:-
 Billing Based on Usage: Charges apply per use (compute time, storage, queries).
 
 Billing Account: Needed to activate and pay for GCP services.
@@ -43,7 +43,7 @@ Vertex AI API	Train and deploy machine learning models on GCP.
 Cloud Run API	Run containerized apps that scale automatically with incoming traffic.
 Connectors API	Connect GCP with external services like Salesforce or MySQL.
 
-🌐 4. Networking
+## 🌐 4. Networking:-
 🔹 Virtual Networking
 Virtual Private Cloud (VPC) enables secure communication between resources.
 
@@ -59,19 +59,19 @@ Filters traffic in and out of your GCP network.
 
 Protects resources by allowing or denying traffic based on rules.
 
-💾 5. GCP Storage Options
+## 💾 5. GCP Storage Options:-
 Storage Type	Description	File Types
 Object Storage	Stores files as objects. Best for backups, images, videos.	Images, videos, backups, logs (JPG, MP4, ZIP, CSV)
 Block Storage	Disk-based storage for VMs and databases.	VM files, databases, logs (VHD, MySQL, LOG)
 File Storage	Traditional file system for shared access.	Documents, config files, spreadsheets (DOCX, JSON, XLSX)
 Database Storage	Structured table-based storage for SQL databases.	SQL exports, DB snapshots (SQL, CSV, Avro)
 
-🔗 6. Integration Storage Types
+## 🔗 6. Integration Storage Types:-
 Integration Type	Description	Example
 Inside Cloud (Internal)	Connects GCP services securely with low latency.	Cloud Storage → BigQuery, Pub/Sub → Cloud Functions
 Outside Cloud (External)	Integrates GCP with third-party or on-prem systems via APIs, VPNs, etc.	GCP → Salesforce, On-prem DBs via API or VPN
 
-📡 7. External Pipeline Mechanisms
+## 📡 7. External Pipeline Mechanisms:-
 Mechanism	Description
 REST APIs	Allows app-to-app data transfer using HTTP requests.
 VPN / Interconnect	Secure, private network connection from on-premises to GCP.
@@ -81,7 +81,7 @@ Cloud Functions / Run	Triggers workflows from external HTTP events.
 Airflow / Talend	Automates multi-step workflows with orchestration tools.
 Kafka / Dataflow	Real-time stream processing and transformation of external data.
 
-✅ 8. When to Use What
+ ## When to Use What:-
 Use REST APIs for communication between systems.
 
 Use VPN/Interconnect for secure, frequent data exchange.
@@ -92,7 +92,7 @@ Use SFTP for batch uploads.
 
 Use Cloud Functions for event-driven tasks.
 
-🔁 9. Internal GCP Pipeline Mechanisms
+## 🔁 8. Internal GCP Pipeline Mechanisms:-
 Mechanism	Description
 Cloud Composer	Orchestrates workflows using Apache Airflow.
 Dataflow	Processes real-time and batch data using Apache Beam.
@@ -102,7 +102,7 @@ Pub/Sub	Streams events and messages to services.
 Workflows	Automates service interactions with a defined flow.
 BigQuery Scheduled Jobs	Schedules SQL queries for analytics or reporting.
 
-🔄 10. Use Case Example
+ ## 🔄Use Case Example
 Cloud Storage upload → triggers Cloud Function → publishes message to Pub/Sub → starts Dataflow → loads data into BigQuery.
 
 
