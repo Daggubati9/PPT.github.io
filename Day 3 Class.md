@@ -61,10 +61,46 @@ Each project must be linked to a Billing Account to use paid services.
 
 API Services
 
-API / Service	Purpose
+API / Service	Purpose:
 Dialogflow API	Build conversational agents (chatbots, voicebots) using NLP
 Cloud SQL API	Manage relational databases like MySQL/PostgreSQL in the cloud
 BigQuery API	Run fast SQL queries on large-scale datasets (data warehouse)
 Vertex AI API	Train, deploy, and manage machine learning models
 Cloud Run API	Deploy and scale containerized apps with HTTP endpoints automatically
 Connectors API	Connect GCP services to external systems (e.g., Salesforce, MySQL, etc)
+
+🔹 Virtual Networking:
+Virtual networking in cloud platforms like GCP allows resources (like VMs) to communicate securely using virtual networks.
+It includes components like VPCs, subnets, firewalls, and IP addresses to manage traffic flow.
+
+CHAT GPT Versions:
+GPT-4.5 is the latest version of ChatGPT, released by OpenAI on February 27, 2025 .
+Older versions like GPT-3.5 and GPT-3 were slower and less advanced in understanding and answering questions.
+
+VPC:
+🔹 VPC (Virtual Private Cloud) is like your own private network inside the cloud.
+
+🔹 It helps connect and protect your cloud resources like virtual machines, databases, etc.
+
+🔹 You can control:
+
+🔹 Think of it as setting up your own mini data center, but online.
+
+Firewall:
+🔹 A firewall is a security system that controls who can access your network and what traffic is allowed in and out.
+
+🔹 It works like a gatekeeper:
+
+It blocks unwanted traffic (like hackers trying to get in).
+
+It allows trusted traffic (like your web browser accessing a website).
+
+🔹 You can set rules to decide which types of data are safe or unsafe.
+
+GCP Storage options:
+
+| **Storage Type**   | **Description**                                                                                                             |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| **Object Storage** | Stores unstructured data as objects (files + metadata). Ideal for backups, images, and logs. Example: Google Cloud Storage. |
+| **Block Storage**  | Stores data in fixed-size blocks, like a virtual hard drive. Used for VM disks and databases. Example: Persistent Disk.     |
+| **File Storage**   | Provides a traditional folder/file system. Suitable for shared access and legacy applications. Example: Filestore.          |
