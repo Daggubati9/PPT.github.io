@@ -19,7 +19,7 @@ Instance of a class.
 Has its own copy of class properties.
 
 
-my_car = Car("Toyota")
+     my_car = Car("Toyota")
 
 ## 🔹 3. Encapsulation
 
