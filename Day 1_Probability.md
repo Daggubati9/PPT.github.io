@@ -123,4 +123,15 @@ Neither = 13
 a)Getting a pay rise:
 P(Pay Rise)= 312/400=0.78
 
+b)Not getting a pay rise:
+P(No Pay Rise)=1−P(Pay Rise)=1−0.78=0.22
 
+c)Getting both a pay rise and pension benefits
+P(Pay Rise and Benefits)= 173/400-0.4325
+
+d)Getting no pay rise or benefit increase:
+P(Neither)= 13/400-0.0325
+
+e)Getting a pay rise or benefits:
+P(A∪B)=P(A)+P(B)−P(A∩B)
+312+248-173/400= 387/400= 0.9675
