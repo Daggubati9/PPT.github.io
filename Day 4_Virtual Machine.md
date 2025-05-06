@@ -71,3 +71,20 @@ A: For security and automation. Using service accounts avoids sharing admin cred
 
 ## Q5: How are service accounts configured in VMs?
 A: When launching a VM—like on Google Cloud or AWS—you can attach a service account and assign specific roles. The VM can then access cloud APIs using that identity.
+
+## ✅ Interview Q&A: GKE, Containers, Services & Repo:-
+
+## Q1: What are containers?
+A: Containers are lightweight, portable environments that package applications with all their dependencies, making them run consistently across systems. Docker is the most common container tool.
+
+## Q2: What is GKE?
+A: Google Kubernetes Engine (GKE) is a managed Kubernetes platform that allows you to deploy, manage, and scale containerized applications automatically.
+
+## Q3: How do containers run in GKE?
+A: In GKE, containers are grouped into pods. Kubernetes schedules these pods to run on nodes (virtual machines), and GKE manages the underlying infrastructure.
+
+## Q4: What is a GKE Service?
+A: A GKE Service is a Kubernetes object that exposes a set of pods as a network service—allowing other apps, internal or external, to communicate with it.
+
+## Q5: What is a repo, and how is it used with GKE?
+A: A repo (repository) stores container images (e.g., in Google Container Registry or Artifact Registry). You build your Docker image, push it to the repo, and GKE pulls it to deploy.
