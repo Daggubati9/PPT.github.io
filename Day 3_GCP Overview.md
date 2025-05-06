@@ -22,11 +22,11 @@ Provides fine-grained access control to resources.
 
 🔹 Roles
 
-Primitive Role: Broad access roles (Viewer, Editor, Owner).
+  🔹Primitive Role: Broad access roles (Viewer, Editor, Owner).
 
-Predefined Role: Service-specific roles like "Storage Admin" or "BigQuery Viewer".
+  🔹Predefined Role: Service-specific roles like "Storage Admin" or "BigQuery Viewer".
 
-Custom Role: User-defined roles with tailored permissions.
+  🔹Custom Role: User-defined roles with tailored permissions.
 
 | Role      | ✅ Permissions                          | 🚫 Restrictions                       | 🎯 Use When                                  |
 | --------- | -------------------------------------- | ------------------------------------- | -------------------------------------------- |
