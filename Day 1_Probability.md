@@ -78,7 +78,7 @@ Notation: f(x)
 ## 12🔹 Set Theory
 A collection of well-defined elements.
 
-Example: A = {1, 2, 3, 4}
+🔹Example: A = {1, 2, 3, 4}
 Union (A ∪ B): All elements in A or B (or both)
 
 Intersection (A ∩ B): Elements in both A and B
@@ -86,3 +86,154 @@ Intersection (A ∩ B): Elements in both A and B
 Difference (A − B): Elements in A but not in B
 
 Complement (A′): All elements in the universal set not in A
+
+🔹Example:
+The manager of a factory claims that among his 400 employees.
+‾ 312 got a pay rise last year
+‾ 248 got increased pension benefits last year
+‾ 173 got both pension benefits and pay rise last year
+‾ 13 got neither
+
+calculate the probability of.
+a)Getting a pay rise    
+b)Not getting a pay rise 
+c)Getting both a pay rise and pension benefits 
+d)Getting no pay rise or benefit increase 
+e)Getting a pay rise or benefits 
+
+Answer is:
+Let's use set theory to solve this. Define:
+
+Total employees = 400
+
+𝐴
+A: Employees who got a pay rise = 312
+
+𝐵
+B: Employees who got pension benefits = 248
+
+𝐴
+∩
+𝐵
+A∩B: Employees who got both = 173
+
+Neither = 13
+
+From this, we calculate:
+
+a) Getting a pay rise
+𝑃
+(
+Pay Rise
+)
+=
+312
+400
+=
+0.78
+P(Pay Rise)= 
+400
+312
+​
+ =0.78
+b) Not getting a pay rise
+𝑃
+(
+No Pay Rise
+)
+=
+1
+−
+𝑃
+(
+Pay Rise
+)
+=
+1
+−
+0.78
+=
+0.22
+P(No Pay Rise)=1−P(Pay Rise)=1−0.78=0.22
+c) Getting both a pay rise and pension benefits
+𝑃
+(
+Pay Rise and Benefits
+)
+=
+173
+400
+=
+0.4325
+P(Pay Rise and Benefits)= 
+400
+173
+​
+ =0.4325
+d) Getting no pay rise or benefit increase (i.e., neither)
+𝑃
+(
+Neither
+)
+=
+13
+400
+=
+0.0325
+P(Neither)= 
+400
+13
+​
+ =0.0325
+e) Getting a pay rise or benefits (i.e., 
+𝐴
+∪
+𝐵
+A∪B)
+Use the formula:
+
+𝑃
+(
+𝐴
+∪
+𝐵
+)
+=
+𝑃
+(
+𝐴
+)
++
+𝑃
+(
+𝐵
+)
+−
+𝑃
+(
+𝐴
+∩
+𝐵
+)
+P(A∪B)=P(A)+P(B)−P(A∩B)
+=
+312
++
+248
+−
+173
+400
+=
+387
+400
+=
+0.9675
+= 
+400
+312+248−173
+​
+ = 
+400
+387
+​
+ =0.9675
