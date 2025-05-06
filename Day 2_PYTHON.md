@@ -7,7 +7,7 @@ Blueprint or template for objects.
 Defines attributes (variables) and behaviors (methods).
 
 
-class Car:
+    class Car:
     def __init__(self, brand):
     
         self.brand = brand
