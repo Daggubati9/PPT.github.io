@@ -1,6 +1,4 @@
-Basic outcome
-Type of Random Variables: Discret and continuous
-Type of Functions: Probability Mass funtion, Cumilative Distribution function and Density
+
 ## 1.🔹Variable
 A variable is a symbol (like x or y) used to represent a value that can change.
 
@@ -35,22 +33,22 @@ Sample Space (S): The set of all possible outcomes of an experiment.
 Example: For a coin flip → S = {Heads, Tails}
 
 ## 8.🔹Type of Random Variables:-
-     ## 🔹Discrete Random Variable
+## 🔹Discrete Random Variable
 Takes on countable values (usually whole numbers).
 
 Example: Number of heads in 3 coin tosses → 0, 1, 2, 3.
 
-     ## 🔹Continuous Random Variable
+## 🔹Continuous Random Variable
 Takes on infinite values in a range (like real numbers).
 
 Example: Height, time, weight.
 
-## 9.🔹 Events
+## 9.🔹Events
 An event is one or more outcomes of an experiment.
 
 Example: Rolling an even number → {2, 4, 6}
 
-## 10.Function / f(x)
+## 10.🔹Function / f(x)
 A function assigns each input (x) to a specific output.
 
 In probability: often refers to the Probability Function.
@@ -77,7 +75,7 @@ Describes the likelihood of the variable falling within a range, not a specific 
 
 Notation: f(x)
 
-🔹 Set
+## 12🔹 Set Theory
 A collection of well-defined elements.
 
 Example: A = {1, 2, 3, 4}
