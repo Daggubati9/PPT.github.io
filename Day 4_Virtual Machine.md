@@ -30,6 +30,7 @@ SaaS: Everything is managed (like Gmail or Office 365).
 
 Yes—Amazon EC2 (AWS), Microsoft Azure Virtual Machines, Google Compute Engine, and IBM Cloud are popular IaaS providers.
 
+
 ## ✅ Modularization in Virtual Machines:-
 
 ## Q1: What is modularization in a virtual machine?
@@ -52,6 +53,7 @@ A: Ansible, Packer (to build modular VM images), and Vagrant (for managing VM en
 ## Q5: How does this help in DevOps or automation?
 
 A: You can script and version-control each module. That makes testing and deployment faster and more consistent across environments.
+
 
 ## ✅ Interview Q&A: Service Account vs. Owner Account in Virtual Machines
 
