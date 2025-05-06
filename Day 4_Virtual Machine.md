@@ -152,3 +152,26 @@ Scales to zero (cost-effective)
 Fast deployments
 
 Supports any language or framework (since it uses containers)
+
+## ✅ What is a Serverless Platform:-
+
+A serverless platform lets you run your app without setting up or managing servers. You just write your code, upload it, and the cloud takes care of the rest — like starting, stopping, and scaling your app.
+
+## 🧠 Easy way to understand:
+You don’t need to worry about servers.
+
+Your app starts when needed and stops when not used.
+
+You only pay when your app is running.
+
+## 🛠️ Examples of Serverless Platforms:
+| Platform            | What it does                        |
+| ------------------- | ----------------------------------- |
+| **Cloud Run**       | Runs containerized apps easily      |
+| **AWS Lambda**      | Runs functions triggered by events  |
+| **Azure Functions** | Like Lambda, but on Microsoft Azure |
+
+
+## 🚀 Example Use Case:
+You build a small web app → Put it in a container → Deploy it to Cloud Run → You get a public URL → Done!
+No need to manage a virtual machine or server.
