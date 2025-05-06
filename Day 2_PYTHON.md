@@ -28,7 +28,7 @@ Bundles data and methods that operate on the data.
 Protects internal state using private variables (_var or __var).
 
 
-class Person:
+    class Person:
     def __init__(self, name):
     
         self.__name = name  # private
@@ -46,7 +46,7 @@ Achieved via abstract classes or interfaces.
 
 from abc import ABC, abstractmethod
 
-class Animal(ABC):
+    class Animal(ABC):
 
     @abstractmethod
     
@@ -61,13 +61,13 @@ One class (child) inherits properties of another (parent).
 Promotes reusability.
 
 
-class Animal:
+    class Animal:
 
     def speak(self):
     
         print("Sound")
 
-class Dog(Animal):
+    class Dog(Animal):
 
     def speak(self):
     
@@ -79,11 +79,11 @@ One method behaves differently based on the object.
 
 Achieved via method overriding or duck typing.
 
-def animal_sound(animal):
+    def animal_sound(animal):
 
     animal.speak()
 
-animal_sound(Dog())  # Output: Bark
+    animal_sound(Dog())  # Output: Bark
 
 ## 🔁 Summary Table:
 | Concept       | Meaning                             | Key Benefit          |
