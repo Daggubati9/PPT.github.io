@@ -71,10 +71,12 @@ class Animal:
 class Dog(Animal):
     def speak(self): print("Bark")
 ## 🔁 Summary Table:
-Concept	Meaning	Key Benefit
-Class	Template for creating objects	Structure
-Object	Instance of a class	Real-world modeling
-Encapsulation	Hides data	Data protection
-Abstraction	Shows essentials, hides complexity	Simplifies interface
-Inheritance	Child class uses parent class logic	Code reuse
-Polymorphism	Many forms of one function	Flexibility
+| Concept       | Meaning                             | Key Benefit          |
+| ------------- | ----------------------------------- | -------------------- |
+| Class         | Template for creating objects       | Structure            |
+| Object        | Instance of a class                 | Real-world modeling  |
+| Encapsulation | Hides data                          | Data protection      |
+| Abstraction   | Shows essentials, hides complexity  | Simplifies interface |
+| Inheritance   | Child class uses parent class logic | Code reuse           |
+| Polymorphism  | Many forms of one function          | Flexibility          |
+
