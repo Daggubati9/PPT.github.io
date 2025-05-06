@@ -89,10 +89,14 @@ Complement (A′): All elements in the universal set not in A
 
 🔹Example:
 The manager of a factory claims that among his 400 employees.
-‾ 312 got a pay rise last year
-‾ 248 got increased pension benefits last year
-‾ 173 got both pension benefits and pay rise last year
-‾ 13 got neither
+
+312 got a pay rise last year
+
+248 got increased pension benefits last year
+
+173 got both pension benefits and pay rise last year
+
+13 got neither
 
 calculate the probability of.
 a)Getting a pay rise    
