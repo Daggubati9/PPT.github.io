@@ -88,3 +88,20 @@ A: A GKE Service is a Kubernetes object that exposes a set of pods as a network 
 
 ## Q5: What is a repo, and how is it used with GKE?
 A: A repo (repository) stores container images (e.g., in Google Container Registry or Artifact Registry). You build your Docker image, push it to the repo, and GKE pulls it to deploy.
+
+## ✅ Scaling & Ingress:-
+
+## Q1: What is scaling in cloud or container environments?
+A: Scaling means increasing or decreasing computing resources to handle changes in load. It helps maintain performance and availability.
+
+## Q2: What is vertical scaling?
+A: Vertical scaling (or scaling up) means increasing the capacity of a single server or instance — for example, by adding more CPU, RAM, or storage.
+
+## Q3: What is horizontal scaling?
+A: Horizontal scaling (or scaling out) means adding more servers or instances to distribute the load. It’s more flexible and fault-tolerant than vertical scaling.
+
+## Q4: What is ingress in Kubernetes or GKE?
+A: Ingress is a Kubernetes object that manages external access to services in a cluster, typically HTTP/HTTPS traffic. It acts like a smart router or load balancer.
+
+## Q5: How do scaling and ingress work together?
+A: Horizontal scaling creates multiple pods for a service, and the ingress controller routes traffic to the right pod automatically. This ensures balanced and efficient traffic flow.
