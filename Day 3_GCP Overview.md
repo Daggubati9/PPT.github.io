@@ -21,13 +21,21 @@ Manages who can access what in GCP.
 Provides fine-grained access control to resources.
 
 🔹 Roles
+
 Primitive Role: Broad access roles (Viewer, Editor, Owner).
 
 Predefined Role: Service-specific roles like "Storage Admin" or "BigQuery Viewer".
 
 Custom Role: User-defined roles with tailored permissions.
 
+| Role      | ✅ Permissions                          | 🚫 Restrictions                       | 🎯 Use When                                  |
+| --------- | -------------------------------------- | ------------------------------------- | -------------------------------------------- |
+| 📄 Viewer | Can view content                       | Cannot edit, comment, or share        | You want someone to read only                |
+| ✏️ Editor | Can view, comment, and edit            | Cannot delete, share, or manage roles | Collaboration is needed but no admin access  |
+| 👑 Owner  | Full control over content and settings | —                                     | You created the content or need admin rights |
+
 🔹 Service Account
+
 Special Google account used by apps or VMs to access GCP services securely.
 
 ## 📊 3. API Services and Usage:-
