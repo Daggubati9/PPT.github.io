@@ -1,75 +1,81 @@
 ## 1.🧠 OOPs Concepts:-
 
-## a. Class
-A blueprint for creating objects.
+🔹 1. Class
+Blueprint or template for objects.
 
-Defines properties (variables) and methods (functions).
-
-Example:
+Defines attributes (variables) and behaviors (methods).
 
 python
 Copy
 Edit
 class Car:
-    def __init__(self, model):
-        self.model = model
-## b. Object
-A real-world instance of a class.
+    def __init__(self, brand):
+        self.brand = brand
+🔹 2. Object
+Instance of a class.
 
-Example:
+Has its own copy of class properties.
 
 python
 Copy
 Edit
 my_car = Car("Toyota")
-## c. Encapsulation
-Hides internal data and shows only what's necessary.
+🔹 3. Encapsulation
+Bundles data and methods that operate on the data.
 
-Achieved using private variables and getters/setters.
-
-Protects data from unauthorized access.
-
-## d. Abstraction
-Shows only essential features, hides details.
-
-Example: You use a car without knowing how the engine works.
-
-In code, done using abstract classes or interfaces.
-
-## e. Inheritance
-Allows a class (child) to use properties and methods of another class (parent).
-
-Promotes code reuse.
-
-Example:
+Protects internal state using private variables (_var or __var).
 
 python
 Copy
 Edit
-class Vehicle:
-    def move(self): print("Moving")
+class Person:
+    def __init__(self, name):
+        self.__name = name  # private
 
-class Car(Vehicle):
-    pass
-## f. Polymorphism
-Same method name, but different behavior depending on object.
+    def get_name(self):
+        return self.__name
+🔹 4. Abstraction
+Hides complex implementation, shows only essentials.
 
-Two types:
+Achieved via abstract classes or interfaces.
 
-Compile-time (method overloading) – limited in Python
+python
+Copy
+Edit
+from abc import ABC, abstractmethod
 
-Run-time (method overriding)
+class Animal(ABC):
+    @abstractmethod
+    def speak(self):
+        pass
+🔹 5. Inheritance
+One class (child) inherits properties of another (parent).
 
-Example:
+Promotes reusability.
 
 python
 Copy
 Edit
 class Animal:
-    def speak(self): print("Animal sound")
+    def speak(self):
+        print("Sound")
 
 class Dog(Animal):
-    def speak(self): print("Bark")
+    def speak(self):
+        print("Bark")
+🔹 6. Polymorphism
+One method behaves differently based on the object.
+
+Achieved via method overriding or duck typing.
+
+python
+Copy
+Edit
+def animal_sound(animal):
+    animal.speak()
+
+animal_sound(Dog())  # Output: Bark
+
 ## 🔁 Summary Table:
 | Concept       | Meaning                             | Key Benefit          |
 | ------------- | ----------------------------------- | -------------------- |
