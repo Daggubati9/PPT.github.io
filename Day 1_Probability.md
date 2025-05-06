@@ -99,10 +99,14 @@ The manager of a factory claims that among his 400 employees.
 13 got neither
 
 calculate the probability of.
-a)Getting a pay rise    
+a)Getting a pay rise
+
 b)Not getting a pay rise 
+
 c)Getting both a pay rise and pension benefits 
+
 d)Getting no pay rise or benefit increase 
+
 e)Getting a pay rise or benefits 
 
 Answer is:
@@ -115,3 +119,10 @@ B: Employees who got pension benefits = 248
 A∩B: Employees who got both = 173
 
 Neither = 13
+
+a)Getting a pay rise:
+P(Pay Rise)= 
+400
+312
+​
+ =0.78
