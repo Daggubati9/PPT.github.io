@@ -1,6 +1,6 @@
 ## 1.🧠 OOPs Concepts:-
 
-🔹 1. Class
+## 🔹 1. Class
 Blueprint or template for objects.
 
 Defines attributes (variables) and behaviors (methods).
@@ -11,7 +11,8 @@ Edit
 class Car:
     def __init__(self, brand):
         self.brand = brand
-🔹 2. Object
+        
+## 🔹 2. Object
 Instance of a class.
 
 Has its own copy of class properties.
@@ -20,7 +21,8 @@ python
 Copy
 Edit
 my_car = Car("Toyota")
-🔹 3. Encapsulation
+
+## 🔹 3. Encapsulation
 Bundles data and methods that operate on the data.
 
 Protects internal state using private variables (_var or __var).
@@ -34,7 +36,8 @@ class Person:
 
     def get_name(self):
         return self.__name
-🔹 4. Abstraction
+        
+## 🔹 4. Abstraction
 Hides complex implementation, shows only essentials.
 
 Achieved via abstract classes or interfaces.
@@ -48,7 +51,8 @@ class Animal(ABC):
     @abstractmethod
     def speak(self):
         pass
-🔹 5. Inheritance
+        
+## 🔹 5. Inheritance
 One class (child) inherits properties of another (parent).
 
 Promotes reusability.
@@ -63,7 +67,8 @@ class Animal:
 class Dog(Animal):
     def speak(self):
         print("Bark")
-🔹 6. Polymorphism
+        
+## 🔹 6. Polymorphism
 One method behaves differently based on the object.
 
 Achieved via method overriding or duck typing.
