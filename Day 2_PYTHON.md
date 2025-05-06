@@ -5,9 +5,7 @@ Blueprint or template for objects.
 
 Defines attributes (variables) and behaviors (methods).
 
-python
-Copy
-Edit
+
 class Car:
     def __init__(self, brand):
         self.brand = brand
@@ -17,9 +15,7 @@ Instance of a class.
 
 Has its own copy of class properties.
 
-python
-Copy
-Edit
+
 my_car = Car("Toyota")
 
 ## 🔹 3. Encapsulation
@@ -27,9 +23,7 @@ Bundles data and methods that operate on the data.
 
 Protects internal state using private variables (_var or __var).
 
-python
-Copy
-Edit
+
 class Person:
     def __init__(self, name):
         self.__name = name  # private
@@ -42,9 +36,7 @@ Hides complex implementation, shows only essentials.
 
 Achieved via abstract classes or interfaces.
 
-python
-Copy
-Edit
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -57,9 +49,7 @@ One class (child) inherits properties of another (parent).
 
 Promotes reusability.
 
-python
-Copy
-Edit
+
 class Animal:
     def speak(self):
         print("Sound")
@@ -73,9 +63,6 @@ One method behaves differently based on the object.
 
 Achieved via method overriding or duck typing.
 
-python
-Copy
-Edit
 def animal_sound(animal):
     animal.speak()
 
