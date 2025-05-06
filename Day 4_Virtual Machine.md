@@ -52,3 +52,20 @@ A: Ansible, Packer (to build modular VM images), and Vagrant (for managing VM en
 ## Q5: How does this help in DevOps or automation?
 
 A: You can script and version-control each module. That makes testing and deployment faster and more consistent across environments.
+
+## ✅ Interview Q&A: Service Account vs. Owner Account in Virtual Machines
+
+## Q1: What is a service account in a virtual machine context?
+A: A service account is a special type of account used by applications or services running on the VM to access other resources securely—without human interaction. It usually has limited permissions based on its role.
+
+## Q2: What is an owner account?
+A: An owner account is a user account with full administrative rights over the VM or cloud project. It can manage permissions, configure resources, delete VMs, and assign roles.
+
+## Q3: What’s the difference between them?
+A: The owner account is for human users with full control, while service accounts are for automated access by apps or scripts, usually with only the permissions they need (principle of least privilege).
+
+## Q4: Why use a service account instead of just the owner account?
+A: For security and automation. Using service accounts avoids sharing admin credentials with scripts, and limits the damage if something goes wrong.
+
+## Q5: How are service accounts configured in VMs?
+A: When launching a VM—like on Google Cloud or AWS—you can attach a service account and assign specific roles. The VM can then access cloud APIs using that identity.
