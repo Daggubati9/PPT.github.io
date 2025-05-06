@@ -121,8 +121,6 @@ A∩B: Employees who got both = 173
 Neither = 13
 
 a)Getting a pay rise:
-P(Pay Rise)= 
-400
-312
-​
- =0.78
+P(Pay Rise)= 312/400=0.78
+
+
