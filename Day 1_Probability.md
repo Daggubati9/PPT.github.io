@@ -109,7 +109,7 @@ d)Getting no pay rise or benefit increase
 
 e)Getting a pay rise or benefits 
 
-Answer is:
+## Answer is:
 Total employees = 400
 
 A: Employees who got a pay rise = 312
