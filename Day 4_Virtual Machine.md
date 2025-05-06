@@ -105,3 +105,23 @@ A: Ingress is a Kubernetes object that manages external access to services in a 
 
 ## Q5: How do scaling and ingress work together?
 A: Horizontal scaling creates multiple pods for a service, and the ingress controller routes traffic to the right pod automatically. This ensures balanced and efficient traffic flow.
+
+## ✅ Round Robin, Load Balancing, Private & Public:-
+
+## Q1: What is load balancing?
+A: Load balancing is the process of distributing network or application traffic across multiple servers or instances to ensure no single resource is overwhelmed, improving performance and reliability.
+
+## Q2: What is the round robin mechanism in load balancing?
+A: Round robin is a simple method where requests are sent to servers one after another in a circular order. It doesn't consider server health or load—just distributes evenly.
+
+## Q3: What's the difference between public and private services?
+
+Public services are accessible over the internet, like a website.
+
+Private services are only accessible within a secured internal network, such as a company’s backend API or internal tools.
+
+## Q4: How are load balancers used with public and private services?
+
+Public Load Balancer directs internet traffic to public-facing services.
+
+Internal Load Balancer distributes traffic inside a private network, often for microservices or internal APIs.
