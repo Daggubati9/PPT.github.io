@@ -125,3 +125,30 @@ Private services are only accessible within a secured internal network, such as 
 Public Load Balancer directs internet traffic to public-facing services.
 
 Internal Load Balancer distributes traffic inside a private network, often for microservices or internal APIs.
+
+## ✅ Cloud Run & Serverless Platform:-
+
+## Q1: What is Cloud Run?
+A: Cloud Run is a fully managed serverless platform by Google Cloud that lets you run containerized applications without managing infrastructure.
+
+## Q2: What does "serverless" mean?
+A: Serverless means you don’t have to manage servers manually. The platform handles scaling, patching, and resource allocation. You just deploy your code or container, and it runs as needed.
+
+## Q3: How do you deploy an app to Cloud Run?
+
+Package your app into a Docker container.
+
+Push it to Artifact Registry or Container Registry.
+
+Deploy it using the Cloud Console, CLI (gcloud run deploy), or Terraform.
+Cloud Run automatically gives it a HTTPS URL and scales based on requests.
+
+## Q4: What are the benefits of using Cloud Run?
+
+No infrastructure to manage
+
+Scales to zero (cost-effective)
+
+Fast deployments
+
+Supports any language or framework (since it uses containers)
