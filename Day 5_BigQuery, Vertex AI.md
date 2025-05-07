@@ -1,4 +1,5 @@
-## ✅ 1. BigQuery
+## ✅ 1. BigQuery:-
+
 ## 🔹 What is BigQuery?
 
 BigQuery is Google Cloud’s serverless data warehouse that allows you to store and analyze large datasets using SQL. It’s highly scalable and doesn’t require server management. 💬 “BigQuery is fast, cost-efficient, and great for analyzing large volumes of data.”
@@ -15,43 +16,40 @@ Semi-Structured Data: Flexible format, often nested or with arrays (e.g., JSON, 
 
 You can use BigQuery as a data source for training ML models in Vertex AI. 💬 “Prepare data in BigQuery and train a model directly in Vertex AI without moving files manually.”
 
-## ✅ 2. Dataflow
-🔹 What is Dataflow?
-Dataflow is a data processing tool on GCP used for cleaning, transforming, and preparing data for storage or analysis.
+## ✅ 2. Dataflow:-
 
-💬 “If my data is messy or in different formats, I use Dataflow to clean and load it into BigQuery or Vertex AI.”
+## 🔹 What is Dataflow?
 
-🔹 Example:
-Flatten nested JSON logs or remove missing values using Dataflow before training a model.
+Dataflow is a data processing tool on GCP used for cleaning, transforming, and preparing data for storage or analysis. 💬 “If my data is messy or in different formats, I use Dataflow to clean and load it into BigQuery or Vertex AI.”
 
-✅ 3. Vertex AI
-🔹 What is Vertex AI?
-Vertex AI is Google Cloud’s ML platform to build, train, and deploy machine learning models — all in one place.
+🔹 Example: Flatten nested JSON logs or remove missing values using Dataflow before training a model.
 
-💬 “It supports AutoML and custom models, pipelines, and integrates with tools like BigQuery and Dataflow.”
+## ✅ 3. Vertex AI:-
 
-🔹 LLM & Pipeline Architecture (Based on Notes):
-Prepare & Train Block
+## 🔹 What is Vertex AI?
+Vertex AI is Google Cloud’s ML platform to build, train, and deploy machine learning models — all in one place. 💬 “It supports AutoML and custom models, pipelines, and integrates with tools like BigQuery and Dataflow.”
 
-Roles: BA (Business Analyst)
+## 🔹 LLM & Pipeline Architecture:
+1. Prepare & Train Block
 
-Data is prepared using BigQuery
+    🔹 Roles: BA (Business Analyst)
 
-Training happens using Vertex AI, possibly using Gemini (LLM support)
+    🔹 Data is prepared using BigQuery
 
-Model is saved in the Model Registry
+    🔹 Training happens using Vertex AI, possibly using Gemini (LLM support)
 
-LLM Pipeline
+    🔹 Model is saved in the Model Registry
 
-Roles: BA, DS (Data Scientist), CS (Cloud Specialist)
+2. LLM Pipeline
 
-Workflow:
+    🔹 Roles: BA, DS (Data Scientist), CS (Cloud Specialist)
 
-sql
-Copy
-Edit
+    Workflow:
+
 Prepare & Train → Prediction → Evaluation
-Models are registered and reused
+
+
+     🔹 Models are registered and reused
 
 🔹 Why Build a Pipeline?
 “Pipelines automate everything — from data prep to deployment. It makes ML workflows scalable, repeatable, and organized.”
