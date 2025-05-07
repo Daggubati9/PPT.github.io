@@ -1,17 +1,20 @@
 ## ✅ 1. BigQuery
-🔹 What is BigQuery?
+## 🔹 What is BigQuery?
+
 BigQuery is Google Cloud’s serverless data warehouse that allows you to store and analyze large datasets using SQL. It’s highly scalable and doesn’t require server management.
 
 💬 “BigQuery is fast, cost-efficient, and great for analyzing large volumes of data.”
 
-🔹 Structured vs Semi-Structured Data
+## 🔹 Structured vs Semi-Structured Data
+
 Structured Data: Organized into rows and columns (e.g., tables like Excel or SQL).
 
 Semi-Structured Data: Flexible format, often nested or with arrays (e.g., JSON, Avro, Parquet).
 
 🧠 Example: Store customer info in tables (structured) and logs in JSON (semi-structured) — both can be queried in BigQuery.
 
-🔹 BigQuery + Vertex AI
+## 🔹 BigQuery + Vertex AI
+
 You can use BigQuery as a data source for training ML models in Vertex AI.
 
 💬 “Prepare data in BigQuery and train a model directly in Vertex AI without moving files manually.”
