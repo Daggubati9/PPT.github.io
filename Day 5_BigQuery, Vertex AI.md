@@ -1,3 +1,5 @@
+## BigQuery:-
+
 ## ✅ 1. BigQuery:-
 “BigQuery is Google Cloud’s data warehouse. It helps us store and analyze large datasets using SQL. It’s serverless, so I don’t have to manage any servers, and it’s very fast even for big data.”
 
@@ -23,6 +25,8 @@
 
 ## ✅ 7. Why this is useful:-
 “This setup is great because it’s fully on the cloud, easy to scale, and everything works together in Google Cloud. I don’t need to manage servers or move data between tools manually.”
+
+
 
 ## Pub/Sub:-
 
@@ -52,11 +56,14 @@
 ✅ When to Use Each?
 
 Pull	You want more control, or your app checks messages at intervals.
+
 Push	You want fast delivery to web services or cloud functions.
 
 ## ✅ Final Real-World Example:
 
 “For example, if a sensor in a factory publishes temperature data, Pub/Sub can send that to a monitoring service. If we use pull, the monitoring app checks when ready. If we use push, the data is sent immediately to the app.”
+
+
 
 ## ✅ Cloud SQL:-
 
