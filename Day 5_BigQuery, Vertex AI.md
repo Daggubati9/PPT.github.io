@@ -4,9 +4,7 @@
 ## ✅ 2. Structured vs. Semi-Structured Data:-
 “Structured data is like Excel sheets or SQL tables — rows and columns with a fixed format. Semi-structured data is more flexible — like JSON — where we have nested fields or arrays. BigQuery supports both types.”
 
-🔹 Example:
-
-“If I have customer data in a table and log data in JSON format, I can store and query both in BigQuery.”
+🔹 Example: “If I have customer data in a table and log data in JSON format, I can store and query both in BigQuery.”
 
 ## ✅ 3. Vertex AI:-
 “Vertex AI is Google Cloud’s platform for building and training machine learning models. I can use it to train a model using my BigQuery data, and it also helps with deploying that model to make predictions.”
@@ -17,9 +15,9 @@
 ## ✅ 5. Why we use Dataflow:-
 “Dataflow is a tool for processing data before we use it in machine learning. If my raw data is messy or in different formats, I can use Dataflow to clean, transform, and load it into BigQuery or Vertex AI.”
 
-🔹 “For example, I can use Dataflow to flatten nested JSON logs or remove missing values before training a model.”
+🔹 Example: "I can use Dataflow to flatten nested JSON logs or remove missing values before training a model.”
 
-## a simple real-world example you can say:
+## ✅ 6. A simple real-world example you can say:
 
 “Let’s say I’m building a model to predict customer churn. First, I collect data like customer details and website activity — that’s structured and semi-structured data. I clean it using Dataflow, store it in BigQuery, then use Vertex AI to train a model. After training, I can deploy the model and send predictions back to BigQuery.”
 
@@ -35,29 +33,29 @@
 “We use it to connect different systems. For example, if a website gets an order, it can publish a message. Other services—like inventory, email notifications, or delivery—can subscribe and react to that message, even if they are running at different times.”
 
 ## ✅3. Push vs. Pull in Pub/Sub
-1. Pull Mode (Beginner-friendly explanation):
+
+1. Pull Mode:
+
 “In pull mode, the subscriber asks for messages when it's ready. It’s like checking your mailbox—you go and check for new letters when you want.”
 
-🔹 Example:
-
-“A background service that checks for new messages every few seconds and processes them.”
+🔹 Example: “A background service that checks for new messages every few seconds and processes them.”
 
 2. Push Mode:
+   
 “In push mode, Pub/Sub sends the message directly to the subscriber’s endpoint (like a URL or API). It’s like someone delivering a letter to your house.”
 
-🔹 Example:
-
-“When a message is published, Pub/Sub immediately pushes it to a web server or cloud function.”
+🔹 Example: “When a message is published, Pub/Sub immediately pushes it to a web server or cloud function.”
 
 ## ✅4. Summary Line for Interview:
 “Pub/Sub is useful for building scalable, event-driven systems. In pull mode, subscribers request messages. In push mode, Pub/Sub delivers messages automatically.”
 
 ✅ When to Use Each?
-Mode	Use When...
+
 Pull	You want more control, or your app checks messages at intervals.
 Push	You want fast delivery to web services or cloud functions.
 
 ## ✅ Final Real-World Example:
+
 “For example, if a sensor in a factory publishes temperature data, Pub/Sub can send that to a monitoring service. If we use pull, the monitoring app checks when ready. If we use push, the data is sent immediately to the app.”
 
 ## ✅ Cloud SQL:-
