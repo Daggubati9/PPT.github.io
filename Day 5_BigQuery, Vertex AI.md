@@ -107,87 +107,51 @@ Integrates with other GCP services (e.g., App Engine, Dataflow)
 
 
 
+## Vertex AI:-
+
+## 🔹 What is Vertex AI?
+Vertex AI is a platform from Google Cloud that helps you build, train, and deploy machine learning (ML) models. It brings together various tools (like AutoML, custom training, data management, and model deployment) in one place.
+
+“Vertex AI is a unified machine learning platform on Google Cloud. It helps us prepare data, train models, and deploy them easily. We can build automated ML pipelines using GCP’s Vertex AI Pipelines, which are useful for handling end-to-end ML workflows. These pipelines are especially helpful when working with large models like LLMs.”
+
+## 🔹 1. Prepare & Train Block: 
+
+BA likely stands for Business Analyst or BigQuery Analysis
+
+The user (BA) works with data and prepares it.
+
+This data goes into Vertex AI, where:
+
+Gemini (likely referring to a generative AI model or assistant)
+
+It helps in training and saving the model in a registry.
+
+📌 Registry is where trained models are stored.
+
+## 🔹 2. LLM Pipeline:
+
+Different roles are listed: BA, DS (Data Scientist), CS (Cloud Specialist)
+
+They work together to prepare and train a Large Language Model (LLM) using Vertex AI
+
+Again, the model is registered
+
+The steps shown:
+Prepare & Train → Prediction → Evaluation
+
+💡 Explanation: You use data to train a model → use it to make predictions → then evaluate how well the model performs.
+
+## Build a Pipeline:
+
+"Why we need to build a pipeline in Vertex AI?"
+
+🔹 “A pipeline automates the full ML workflow — from preparing data to training a model to deploying it. It helps keep things organized, repeatable, and scalable.”
 
 
-## 🧠 Vertex AI:-
+"We will use GCP pipeline?"
 
-## 🔵1. What is Vertex AI?
+🔹 That means you'll use Vertex AI Pipelines, which are built on Kubeflow Pipelines.
 
-Vertex AI is a tool from Google Cloud that helps you build, train, and use machine learning models — all in one place. It’s easier to use than the old AI Platform and has more features like model monitoring and automated workflows.
 
-## 🔵2. What’s the difference between AutoML and custom models?
 
-AutoML: You upload your data, and Google does most of the work (training, tuning).
 
-Custom models: You write your own code for more control (using Python, TensorFlow, etc.).
-
-## 🔵3. How do you deploy a model in Vertex AI?
-
-Train a model (AutoML or custom).
-
-Go to the Models section.
-
-Click Deploy.
-
-Choose where to deploy (an endpoint).
-
-Once deployed, you can send data and get predictions.
-
-## 🔵4. What is the Feature Store?
-
-Feature Store is like a database for machine learning inputs (features). It helps reuse features, keeps training and prediction data the same, and avoids mistakes like data leakage.
-
-## 🔵5. How does Vertex AI detect if a model is getting worse over time?
-
-It uses Model Monitoring to watch for:
-
-Data drift: When new data looks very different from training data.
-
-Prediction problems: If outputs are off, it can alert you.
-
-## 🔵6. What are Pipelines in Vertex AI?
-
-Pipelines are like recipes. They describe each ML step (get data → train → test → deploy) so the whole process runs automatically. This is good for MLOps (machine learning + operations).
-
-## 🔵7. How do you train a big model with your own code?
-
-Put your code in a Docker container (a kind of app box).
-
-Use CustomContainerTrainingJob.
-
-Pick machine size (with GPU if needed).
-
-Vertex AI runs your code for you on powerful cloud machines.
-
-❓8. What is a model registry?
-Answer:
-It’s a place to store and manage all your models. You can:
-
-Keep track of different versions
-
-Share with your team
-
-Deploy models safely
-
-❓9. How is Vertex AI different from AWS SageMaker or Azure ML?
-Answer:
-All are cloud ML platforms. Vertex AI is:
-
-Very good for AutoML and big workflows
-
-Tightly linked with other Google Cloud services
-
-Uses tools like Kubeflow and BigQuery smoothly
-
-❓10. How do you do MLOps in Vertex AI?
-Answer:
-
-Build a pipeline (like a flowchart).
-
-Run it when new data comes in.
-
-Store models in the registry.
-
-Use tools like Cloud Build for automation.
-
-Monitor models to keep them accurate over time.
