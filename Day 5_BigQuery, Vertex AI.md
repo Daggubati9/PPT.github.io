@@ -70,9 +70,10 @@ Subscriber receives them
 | -------- | ---------------------------------------------------- | -------------------------------- |
 | **Pull** | Subscriber pulls messages when ready                 | Batch job checks messages        |
 | **Push** | Pub/Sub pushes messages automatically to an endpoint | Sends messages to Cloud Function |
-nction
+
 
 ## 🔹 Real-World Example:
+
 A factory sensor sends temperature data. A monitoring app can pull the data when ready (pull mode) or receive it instantly (push mode).
 
 ## ✅ 5. Cloud SQL:-
@@ -100,15 +101,20 @@ Scalable
 Easy integration with App Engine, Dataflow, etc.
 
 🔹 Simple Example:
+
 A travel booking app can store flights, bookings, and user info in Cloud SQL. Google manages the database automatically.
 
 🔹 Comparison: BigQuery vs Cloud SQL
-Feature	BigQuery	Cloud SQL
-Use Case	Analytics, large-scale querying	Day-to-day operations, app DB
-Data Type	Structured/Semi-structured	Structured
-Query Type	Analytical SQL	Transactional SQL (CRUD)
+
+| Feature    | BigQuery                        | Cloud SQL                     |
+| ---------- | ------------------------------- | ----------------------------- |
+| Use Case   | Analytics, large-scale querying | Day-to-day operations, app DB |
+| Data Type  | Structured/Semi-structured      | Structured                    |
+| Query Type | Analytical SQL                  | Transactional SQL (CRUD)      |
+
 
 ✅ Real-World Flow: End-to-End Example
+
 “To predict customer churn:”
 
 Collect data: customer records (structured) + logs (semi-structured)
