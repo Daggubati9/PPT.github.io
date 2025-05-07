@@ -44,20 +44,18 @@ Vertex AI is Google Cloud’s ML platform to build, train, and deploy machine le
 
     🔹 Roles: BA, DS (Data Scientist), CS (Cloud Specialist)
 
-    Workflow:
+       Workflow: Prepare & Train → Prediction → Evaluation
 
-Prepare & Train → Prediction → Evaluation
+    🔹 Models are registered and reused
 
+    🔹 Why Build a Pipeline: “Pipelines automate everything — from data prep to deployment. It makes ML workflows scalable, repeatable, and organized.”
 
-     🔹 Models are registered and reused
+            🔹 Built using Vertex AI Pipelines (Kubeflow under the hood)
 
-🔹 Why Build a Pipeline?
-“Pipelines automate everything — from data prep to deployment. It makes ML workflows scalable, repeatable, and organized.”
+## ✅ 4. Cloud Pub/Sub:-
 
-Built using Vertex AI Pipelines (Kubeflow under the hood)
+## 🔹 What is Pub/Sub?
 
-✅ 4. Cloud Pub/Sub
-🔹 What is Pub/Sub?
 Publish/Subscribe messaging system that lets applications communicate asynchronously.
 
 Publisher sends messages
@@ -66,28 +64,33 @@ Subscriber receives them
 
 💬 “Pub/Sub connects systems. For example, a website order can trigger multiple systems via messages.”
 
-🔹 Push vs Pull Modes
-Mode	Explanation	Example
-Pull	Subscriber pulls messages when ready	Batch job checks messages
-Push	Pub/Sub pushes messages automatically to an endpoint	Sends messages to Cloud Function
+## 🔹 Push vs Pull Modes
 
-🔹 Real-World Example:
+| Mode     | Explanation                                          | Example                          |
+| -------- | ---------------------------------------------------- | -------------------------------- |
+| **Pull** | Subscriber pulls messages when ready                 | Batch job checks messages        |
+| **Push** | Pub/Sub pushes messages automatically to an endpoint | Sends messages to Cloud Function |
+nction
+
+## 🔹 Real-World Example:
 A factory sensor sends temperature data. A monitoring app can pull the data when ready (pull mode) or receive it instantly (push mode).
 
-✅ 5. Cloud SQL
-🔹 What is Cloud SQL?
-Managed relational database service on GCP that supports MySQL, PostgreSQL, and SQL Server.
+## ✅ 5. Cloud SQL:-
 
-💬 “Google handles backups, scaling, and patching. I just use it like a normal database.”
+## 🔹 What is Cloud SQL?
 
-🔹 Why Use It?
+Managed relational database service on GCP that supports MySQL, PostgreSQL, and SQL Server. 💬 “Google handles backups, scaling, and patching. I just use it like a normal database.”
+
+## 🔹 Why Use It?
+
 Store structured data like customer details, orders, bookings
 
 No need to manage servers
 
 Integrates with apps and other GCP services
 
-🔹 Benefits
+## 🔹 Benefits
+
 Fully managed
 
 Encrypted and secure
