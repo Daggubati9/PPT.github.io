@@ -65,7 +65,7 @@ Push	You want fast delivery to web services or cloud functions.
 
 
 
-## ✅ Cloud SQL:-
+## Cloud SQL:-
 
 ## 🔹 What is Cloud SQL?
 “Cloud SQL is Google Cloud’s fully managed database service for SQL databases like MySQL, PostgreSQL, and SQL Server.”
