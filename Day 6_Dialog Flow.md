@@ -204,4 +204,78 @@ Custom formatted codes or tracking numbers
 
 “Entities in Dialogflow are used to extract key details from what the user says, like names, dates, or custom values. There are system entities for common types, custom entities for your domain, and advanced types like composite or regex for special use cases.”
 
+## Slot Filling:-
+
+## 🔷 What is Slot Filling in Dialogflow?
+
+✅ Slot filling is the process of collecting required information (entities) from the user to complete a task.
+
+✅ When a user triggers an intent, Dialogflow can ask follow-up questions to collect missing info.
+
+✅ These pieces of information are called “slots”, and each slot is linked to an entity.
+
+## 🔷 Why Use Slot Filling?
+
+🧠 It ensures the bot gets all necessary data before taking action.
+
+✅ Saves time: no need to create many extra intents or flows.
+
+✅ Makes the conversation feel natural and goal-oriented.
+
+🔷 Example Scenario: Booking a Flight
+
+👤 User says: “I want to book a flight”
+
+→ Intent: BookFlight is matched
+
+→ Required slots (entities) might be:
+
+@departure_city → “Where are you flying from?”
+
+@arrival_city → “Where do you want to go?”
+
+@sys.date → “What date would you like to travel?”
+
+🔁 If the user doesn’t mention all of them in the first message, Dialogflow will ask one by one until all slots are filled.
+
+## 🔷 How Slot Filling Works
+
+✅ You define required parameters (slots) inside an intent.
+
+✅ Each parameter is linked to an entity (system or custom).
+
+✅ You provide prompts — questions Dialogflow should ask if the value is missing.
+
+✅ When all slots are filled, the intent is considered complete, and the bot proceeds (e.g., to fulfillment).
+
+💬 Sample Conversation (Slot Filling in Action):
+
+User: I want to book a flight
+
+Bot: Where are you flying from?
+
+User: Paris
+
+Bot: Where do you want to go?
+
+User: London
+
+Bot: What date would you like to travel?
+
+User: June 5th
+
+→ ✅ All slots filled → Proceed with booking
+
+🔷 Best Practices for Slot Filling
+🛑 Don't use too many slots in one intent — it can confuse users.
+
+🔁 Use prompts that are clear and easy to answer.
+
+🧠 Use contexts or Dialogflow CX for better flow control if conversations get complex.
+
+🛠️ Combine with default values or optional slots when some info can be skipped.
+
+🔷 Summary (How to Answer in Interview)
+“Slot filling is used in Dialogflow to collect required information from the user step by step. Each slot is tied to an entity, and if the user doesn't provide all the info, the bot will prompt them until all slots are filled. It helps complete tasks like bookings or orders in a smooth, guided way.”
+
 
