@@ -75,21 +75,32 @@ Example: For CheckOrder, fulfillment checks your order number in a database and 
 ## 🔷 Example Scenario: Online Shop Bot
 
 👕 User: “I want to return my shirt”
+
 → Intent matched: ReturnItem
+
 → Bot: “What is your order number?”
+
 → User enters number → Entity captured: @order-number
+
 → Fulfillment checks system and confirms return
 
 ## 🚗 Another example:
 
 User: “I’d like to rent a car”
+
 → Intent: RentCar
+
 → Bot: “Where would you like to pick it up?”
+
 → Continues asking for drop-off location, dates, etc.
 
 📌 Result: A natural conversation built using intents, entities, and fulfillment to guide the user.
 
-🔷 What is an Entity in Dialogflow?
+
+## Entity:-
+
+## 🔷 What is an Entity in Dialogflow?
+
 ✅ An Entity is used to extract specific information from user input (text or speech).
 
 ✅ It helps the bot pick out important values like dates, names, cities, numbers, or custom terms.
@@ -97,13 +108,15 @@ User: “I’d like to rent a car”
 ✅ Entities turn raw language into structured data that the bot can use in logic or actions.
 
 ✅ Think of it like "filling in the blanks" — e.g., in the sentence “Book a flight to Paris on Friday,”
+
 Dialogflow extracts:
 
 Paris → location entity
 
 Friday → date entity
 
-🔷 Why Are Entities Important?
+ ## 🔷 Why Are Entities Important?
+
 🧠 Without entities, the bot can only understand what the user intends to do.
 
 🧩 With entities, the bot also understands the details needed to perform the action.
@@ -111,7 +124,9 @@ Friday → date entity
 🗣️ Example:
 
 User: “Schedule a meeting at 4 PM tomorrow”
+
 → Intent: ScheduleMeeting
+
 → Entities:
 
 4 PM → @sys.time
@@ -120,7 +135,7 @@ tomorrow → @sys.date
 
 ## 🔷 Types of Entities in Dialogflow:-
 
-## 🟩 1. System Entities (@sys.)
+## 🔹 1. System Entities (@sys.)
 
 ✅ Prebuilt by Dialogflow to detect common data types.
 
@@ -138,7 +153,7 @@ tomorrow → @sys.date
 
 ✅ No need to train or create — Dialogflow understands these automatically.
 
-## 🟦 2. Custom Entities
+## 🔹 2. Custom Entities
 
 ✅ You define these for specific values related to your app or domain.
 
@@ -159,16 +174,17 @@ Values:
 - Pizza (synonyms: cheese pizza, veggie pizza)
 - Burger (synonyms: hamburger, cheeseburger)
 
-🟨 3. Composite Entities
+## 🔹 3. Composite Entities
 
 ✅ Combine multiple entities together for more complex inputs.
 
 🔹 Example:
 
 “from Paris to London”
+
 → composite of @departure_city + @arrival_city
 
-🟧 4. Regexp Entities (Regex)
+## 🔹 4. Regexp Entities (Regex)
 
 ✅ Advanced option using regular expressions to match patterns like:
 
@@ -178,7 +194,7 @@ Custom formatted codes or tracking numbers
 
 ✅ Useful when the value doesn’t follow typical word patterns
 
-🟥 5. Session Entities (Dynamic)
+## 🔹 5. Session Entities (Dynamic)
 
 ✅ Created temporarily during a session (e.g., based on API response)
 
