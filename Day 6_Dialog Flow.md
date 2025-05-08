@@ -41,7 +41,7 @@ Can be embedded in websites or apps for seamless customer interaction without ne
 
 ✅ Great for basic or small bots
 
-## 🟦 Dialogflow CX (Customer Experience)
+## 🔷 Dialogflow CX (Customer Experience)
 
 ✅ Advanced and newer version
 
