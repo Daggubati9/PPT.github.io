@@ -76,7 +76,7 @@ Automatically handles dependency versions and virtual environments.
         poetry add beautifulsoup4 selenium
         poetry shell  # activates the environment
 
-## ✅ 1. Probability (Basic Idea)
+## ✅ 4. Probability (Basic Idea)
 
 Probability is the measure of how likely an event is to happen.
 
@@ -84,34 +84,14 @@ It ranges from 0 to 1 (or 0% to 100%).
 
         Example: The probability of flipping a coin and getting heads = 0.5.
 
-## ✅ 2. Conditional Probability
+## ✅ Conditional Probability
 
 This is the probability of an event happening given that another event has already occurred.
 
-Formula:
-
-        𝑃
-        (
-        𝐴
-        ∣
-        𝐵
-        )
-        =
-        𝑃
-        (
-        𝐴
-        ∩
-        𝐵
-        )
-        𝑃
-        (
-        𝐵
-        )
-        P(A∣B)= 
-        P(B)
-        P(A∩B)
-        ​
- 
+            Formula:
+    
+            P(A∣B)= P(A∩B)/ P(B)
+​
         Example:
         
         A bag has 3 red and 2 blue balls.
