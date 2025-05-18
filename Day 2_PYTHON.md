@@ -100,58 +100,16 @@ This is the probability of an event happening given that another event has alrea
         
         Given it's not blue (so only red balls left), the chance it's red is 100%.
 
-## ✅ 3. Expected Value (Expectation)
+## ✅ Expected Value (Expectation)
 
 The average result if you repeat a random process many times.
 
-        Formula:
+            E(X)=∑(xi⋅P(xi))
         
-        𝐸
-        (
-        𝑋
-        )
-        =
-        ∑
-        (
-        𝑥
-        𝑖
-        ⋅
-        𝑃
-        (
-        𝑥
-        𝑖
-        )
-        )
-        E(X)=∑(x 
-        i
-        ​
-         ⋅P(x 
-        i
-        ​
-         ))
         Example:
         
         Rolling a fair die:
         
-        𝐸
-        =
-        (
-        1
-        +
-        2
-        +
-        3
-        +
-        4
-        +
-        5
-        +
-        6
-        )
-        /
-        6
-        =
-        3.5
         E=(1+2+3+4+5+6)/6=3.5
         
 ## ✅ 4. Mean
@@ -159,32 +117,8 @@ The average result if you repeat a random process many times.
 The mean is just the average of numbers.
 
         Formula:
-        
-        Mean
-        =
-        𝑥
-        1
-        +
-        𝑥
-        2
-        +
-        ⋯
-        +
-        𝑥
-        𝑛
-        𝑛
-        Mean= 
-        n
-        x 
-        1
-        ​
-         +x 
-        2
-        ​
-         +⋯+x 
-        n
-        ​
- 
+        Mean= (x1+x2+⋯+xn)/n
+​
         Example:
         
         Numbers: 2, 4, 6 → Mean = (2+4+6)/3 = 4
@@ -195,24 +129,7 @@ Variance measures how much values are spread out around the mean.
 
         Formula:
         
-        Variance
-        =
-        ∑
-        (
-        𝑥
-        𝑖
-        −
-        𝜇
-        )
-        2
-        𝑛
-        Variance= 
-        n
-        ∑(x 
-        i
-        ​
-         −μ) 
-        2
+        Variance= n∑(xi−μ)2/n
  
         Example:
         
