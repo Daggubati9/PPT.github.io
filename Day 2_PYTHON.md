@@ -21,3 +21,35 @@ Example:
   The part where scraping is done using code and tools.
   
   Sends HTTP requests and parses responses.
+
+## 🧰 2. Python Libraries for Scraping
+
+## ✅ BeautifulSoup
+
+    Used to parse static HTML content.
+    
+    Easy and lightweight.
+
+Example:
+
+
+        from bs4 import BeautifulSoup
+        import requests
+        
+        url = "https://example.com"
+        res = requests.get(url)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        print(soup.title.text)
+        
+## ✅ Selenium
+
+Used for dynamic content (JavaScript-based pages).
+
+Automates browsers (Chrome, Firefox).
+
+Example:
+
+        from selenium import webdriver
+        driver = webdriver.Chrome()
+        driver.get("https://example.com")
+        print(driver.title)
