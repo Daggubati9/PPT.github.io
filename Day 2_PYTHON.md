@@ -456,3 +456,97 @@ Example:
 Explanation:
 
 This line reads the CSV file and stores it in a variable df. Now we can explore and analyze this dataset.
+
+    📌 df.head()
+    
+Use:
+
+Displays the first 5 rows of the dataset.
+
+Example:
+
+    df.head()
+    
+Explanation:
+
+This helps you quickly see what the data looks like – the column names, the values, and the format.
+
+    📌 df.shape
+    
+Use:
+
+Returns the number of rows and columns in the dataset.
+
+Example:
+
+    df.shape
+    
+Explanation:
+
+Useful to know the size of the dataset. For example, (1000, 12) means 1000 rows and 12 columns.
+
+    📌 df.info()
+
+Use:
+
+Displays data types, number of non-null values, and memory usage.
+
+Example:
+
+    df.info()
+    
+Explanation:
+
+This tells you the structure of the dataset – which columns are numeric, if there are any missing values, and the overall quality of the dataset.
+
+    📌 df.describe()
+    
+Use:
+
+Gives summary statistics for all numeric columns.
+
+Example:
+
+    df.describe()
+    
+Shows count, mean, standard deviation, min, max, and quartiles. This helps you understand the range and distribution of your data.
+
+    📌 list(df.columns)
+    
+Use:
+
+Lists the names of all columns in the dataset.
+
+Example:
+
+    list(df.columns)
+    
+Helps when you want to know or use column names for plotting, filtering, or feature selection.
+
+    📌 df.isnull().sum()
+    
+Use:
+
+Checks for missing values in each column.
+
+Explanation:
+
+Useful to detect if you need to clean the data.
+
+    📌 df.duplicated().sum()
+    
+Use:
+
+Counts the number of duplicate rows in the dataset.
+
+| Function                | Purpose                              |
+| ----------------------- | ------------------------------------ |
+| `pd.read_csv()`         | Load dataset                         |
+| `df.head()`             | View top 5 rows                      |
+| `df.shape`              | Get rows & columns count             |
+| `df.info()`             | Structure and null info              |
+| `df.describe()`         | Summary statistics (mean, std, etc.) |
+| `list(df.columns)`      | List column names                    |
+| `df.isnull().sum()`     | Check missing values                 |
+| `df.duplicated().sum()` | Check duplicate rows                 |
+
