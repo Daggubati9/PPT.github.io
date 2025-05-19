@@ -76,7 +76,7 @@ Automatically handles dependency versions and virtual environments.
         poetry add beautifulsoup4 selenium
         poetry shell  # activates the environment
 
-## ✅ 4. Probability (Basic Idea)
+## ✅ 4. Probability 
 
 Probability is the measure of how likely an event is to happen.
 
@@ -112,7 +112,7 @@ The average result if you repeat a random process many times.
         
         E=(1+2+3+4+5+6)/6=3.5
         
-## ✅ 4. Mean
+## ✅ Mean
 
 The mean is just the average of numbers.
 
@@ -123,7 +123,7 @@ The mean is just the average of numbers.
         
         Numbers: 2, 4, 6 → Mean = (2+4+6)/3 = 4
 
-## ✅ 5. Variance
+## ✅ Variance
 
 Variance measures how much values are spread out around the mean.
 
@@ -135,7 +135,7 @@ Variance measures how much values are spread out around the mean.
         
         If values are all close to the mean, variance is small. If values vary a lot, variance is large.
 
-## ✅ 6. Self-Explanatory
+## ✅ Self-Explanatory
 
 In your notes, self-explanatory likely refers to topics that are simple enough to understand on their own, like:
 
@@ -153,7 +153,7 @@ In your notes, self-explanatory likely refers to topics that are simple enough t
         
         AI/ML models (prediction based on probability).
 
-## 📊 What is a Distribution?
+## 📊 5. What is a Distribution?
 
 A probability distribution is a statistical function that describes all the possible values and likelihoods that a random variable can take within a given range.
 
@@ -342,7 +342,7 @@ Example:
     
     SD=Squareroot of Var(X)=Squareroot of 361=19
 
-## ✅ Exploratory Data Analysis (EDA)?
+## ✅ 6. Exploratory Data Analysis (EDA)?
 
 EDA stands for Exploratory Data Analysis. It is the first step in analyzing any dataset. The goal is to understand the structure of the data, detect patterns, find missing or duplicate values, and clean the data before moving to model building or visualization. EDA helps us make better decisions about how to handle the data — for example, whether we need to clean it, remove columns, or transform some values.
 
@@ -418,7 +418,7 @@ Missing values need special handling — we may remove them or fill them.
     
     df.dropna(inplace=True)     # Drop rows with missing values
 
-## ✅ Correlation Matrix
+## ✅ 7. Correlation Matrix
 
 A correlation matrix shows the relationships between numerical variables in a dataset. Each cell shows the correlation value between two variables. This helps us find patterns and make better decisions during analysis.
 
@@ -433,7 +433,7 @@ A correlation matrix shows the relationships between numerical variables in a da
 | 🔥 **Heatmap**           | “This shows the correlation matrix with colors. Strong correlation = dark color, weak = light.”            | Use the heatmap sketch.                |
 | 🤝 **Pair Plot**         | “Shows scatter plots between all pairs of variables.”                                                      | Mention `sns.pairplot()` from Seaborn. |
 
-## ✅ Tools & Libraries
+## ✅ 8. Tools & Libraries
 
 | Library      | Use                                                   |
 | ------------ | ----------------------------------------------------- |
@@ -442,7 +442,7 @@ A correlation matrix shows the relationships between numerical variables in a da
 | `matplotlib` | To build basic visualizations.                        |
 | `seaborn`    | For advanced visualizations like heatmaps, pairplots. |
 
-## ✅ Important Pandas Functions for EDA
+## ✅ 9. Important Pandas Functions for EDA
 
     📌 pd.read_csv('filename.csv')
     
