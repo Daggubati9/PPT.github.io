@@ -242,41 +242,217 @@ Expectation is the average value we expect after many repetitions of a random pr
     Formula: E[X]=∑xi⋅P(xi)
 
     Example:
-        Rolling a fair die:
+        Rolling a fair die: E[X]=1⋅1/6+2⋅1/6+⋯+6⋅1/6=3.5
+
+## ✅ Discrete Random Variable
+
+A discrete variable has countable outcomes.
+
+    Example:
+    
+    Number of heads when tossing 3 coins
+    𝑋=0,1,2,3
+
+If you can count the values one by one, it's discrete.
         
-        𝐸
-        [
-        𝑋
-        ]
-        =
-        1
-        ⋅
-        1
-        6
-        +
-        2
-        ⋅
-        1
-        6
-        +
-        ⋯
-        +
-        6
-        ⋅
-        1
-        6
-        =
-        3.5
-        E[X]=1⋅ 
-        6
-        1
-        ​
-         +2⋅ 
-        6
-        1
-        ​
-         +⋯+6⋅ 
-        6
-        1
-        ​
-         =3.5
+## ✅ Continuous Random Variable
+
+A continuous variable can take any value in a range — even decimals.
+
+    Example:
+    
+    Height of a student
+    X∈[140,190] cm
+
+Between 150 cm and 151 cm, there are infinite possible values.
+
+## ✅ Mean (Expected Value)
+
+The average number of successes in n trials.
+
+        Formula:
+        
+        E[X]=np
+        
+        Example:
+        
+        Toss a fair coin 10 times
+        
+        Probability of heads 
+        
+        p=0.5
+        
+        E[X]=10×0.5=5
+        
+👉 We expect 5 heads on average.
+
+## ✅ Variance
+
+Tells us how spread out the number of successes is from the mean.
+
+    Formula:
+    
+    Var(X)=np(1−p)
+    
+    Example:
+    
+    n=10, 
+    
+    p=0.5
+    
+    Var(X)=10×0.5×(1−0.5)=2.5
+    
+    👉 So, the variance is 2.5.
+
+## ✅ Standard Deviation
+
+The square root of the variance. It shows the typical deviation from the mean.
+
+    Formula:
+    
+    SD= square root of np(1−p)
+    ​
+    Example:
+    
+    SD= Square root of 2.5≈1.58
+ 
+👉 So, the standard deviation is approx. 1.58
+
+| Concept                | Formula                 | Example Result (n = 10, p = 0.5) |
+| ---------------------- | ----------------------- | -------------------------------- |
+| **Mean**               | $E[X] = np$             | $10 \times 0.5 = 5$              |
+| **Variance**           | $Var(X) = np(1 - p)$    | $10 \times 0.5 \times 0.5 = 2.5$ |
+| **Standard Deviation** | $SD = \sqrt{np(1 - p)}$ | $\sqrt{2.5} \approx 1.58$        |
+
+Example:
+
+    n=7600
+    
+    p=5%=0.05
+    
+    ✅ 1. Mean (Expected Value)
+    
+    E[X]=np=7600×0.05=380
+    
+    ✅ 2. Variance
+    
+    Var(X)=np(1−p)=7600×0.05×(1−0.05)=7600×0.05×0.95=361
+    
+    ✅ 3. Standard Deviation
+    
+    SD=Squareroot of Var(X)=Squareroot of 361=19
+
+## ✅ Exploratory Data Analysis (EDA)?
+
+EDA stands for Exploratory Data Analysis. It is the first step in analyzing any dataset. The goal is to understand the structure of the data, detect patterns, find missing or duplicate values, and clean the data before moving to model building or visualization. EDA helps us make better decisions about how to handle the data — for example, whether we need to clean it, remove columns, or transform some values.
+
+    Example:
+    
+    Think of it like checking the quality of ingredients before cooking.
+
+## ✅ Key Steps of EDA
+
+## ✅ 1. Reading a Dataset
+
+First, we load the data to start exploring. Load the file into a data frame using tools like Python (Pandas).
+
+    Python Example (if using Pandas):
+    
+    import pandas as pd
+    df = pd.read_csv('data.csv')
+    df.head()
+    
+    Explain:
+    
+    read_csv loads the file
+    
+    head() shows the first 5 rows
+
+## ✅ 2. Analyzing the Data
+
+We look at the data types, column names, and get summary statistics. Check types, stats with info()/describe().
+
+    Python Example:
+    
+    df.info()
+    df.describe()
+    
+    Explain:
+    
+    info() → shows data types, missing values
+    
+    describe() → shows mean, min, max, etc. for numeric columns
+
+## ✅ 3. Checking for Duplicates
+
+Duplicates can affect analysis. We need to check and remove them. Find with duplicated().sum()
+
+    Python Example:
+    
+    df.duplicated().sum()
+    df = df.drop_duplicates()
+    
+    Explain:
+    
+    duplicated().sum() tells how many duplicates
+    
+    drop_duplicates() removes them
+
+## ✅ 4. Calculating Missing Values
+
+Missing values need special handling — we may remove them or fill them.
+
+    Python Example:
+    
+    df.isnull().sum()
+    
+    Explain:
+    
+    This shows missing values column by column
+    
+    Optional Fixes:
+    
+    df.fillna(0, inplace=True)  # Fill with 0
+    
+    # OR
+    
+    df.dropna(inplace=True)     # Drop rows with missing values
+
+## ✅ Correlation Matrix
+
+A correlation matrix shows the relationships between numerical variables in a dataset. Each cell shows the correlation value between two variables. This helps us find patterns and make better decisions during analysis.
+
+## ✅ Types of Visualization for Correlation
+
+| Plot Type                | Purpose / What to Say                                                                                      | Draw or Show                           |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| 📊 **Bar Plot**          | “Used to show comparison between categories.”                                                              | Refer to bar chart sketch.             |
+| ⚫ **Scatter Plot**       | “Used to see the relationship between two variables. If the dots go in a line, the variables are related.” | Refer to scatter sketch.               |
+| 📦 **Box Plot**          | “Used to show the spread of the data and detect outliers.”                                                 | Use the box plot sketch.               |
+| 📈 **Pipeline Gap Plot** | “A custom visual showing trend or gap. Not very common, but used for progress lines.”                      | Use your drawing.                      |
+| 🔥 **Heatmap**           | “This shows the correlation matrix with colors. Strong correlation = dark color, weak = light.”            | Use the heatmap sketch.                |
+| 🤝 **Pair Plot**         | “Shows scatter plots between all pairs of variables.”                                                      | Mention `sns.pairplot()` from Seaborn. |
+
+## ✅ Tools & Libraries
+
+| Library      | Use                                                   |
+| ------------ | ----------------------------------------------------- |
+| `pandas`     | To read and manipulate datasets.                      |
+| `numpy`      | For numeric operations and matrices.                  |
+| `matplotlib` | To build basic visualizations.                        |
+| `seaborn`    | For advanced visualizations like heatmaps, pairplots. |
+
+## ✅ Important Pandas Functions for EDA
+
+    📌 pd.read_csv('filename.csv')
+    
+Use:
+Reads a CSV (comma-separated values) file and loads it into a DataFrame (a table-like structure in pandas).
+
+Example:
+
+    df = pd.read_csv('winequality-red.csv')
+    
+Explanation:
+
+This line reads the CSV file and stores it in a variable df. Now we can explore and analyze this dataset.
