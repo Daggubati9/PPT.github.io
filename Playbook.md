@@ -2,13 +2,14 @@
 
 At their core, Playbooks are the building blocks for creating generative agents in Dialogflow CX. While traditional Dialogflow CX relies on explicitly defined flows and intents, Playbooks bring the power of Generative AI to the forefront. They allow your agent to:
 
-Understand and respond to complex, unscripted user queries.
+ Understand and respond to complex, unscripted user queries.
 
-Perform actions by leveraging external tools and APIs.
+ Perform actions by leveraging external tools and APIs.
 
-Reason through multi-step processes to achieve a user's goal.
+ Reason through multi-step processes to achieve a user's goal.
 
-## Imagine a human customer service agent. They don't have a rigid script for every single question. Instead, they understand the user's intent, reason about the best course of action, and use various tools (like a knowledge base or an internal system) to resolve the issue. Playbooks enable your Dialogflow CX agent to do something very similar.
+ Imagine a human customer service agent. They don't have a rigid script for every single question. Instead, they understand the user's intent, reason about the best course of action, 
+ and use various tools (like a knowledge base or an internal system) to resolve the issue. Playbooks enable your Dialogflow CX agent to do something very similar.
 
 ## Key Components of a Playbook
 
